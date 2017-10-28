@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What Does The Fox Say?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="http://image.nj.com/home/njo-media/width620/img/entertainment_impact_music/photo/13616716-mmmain.png" alt="">
+        <ul class="quotes">
+            <%for(var i=0; i<quotes.length; i++) {%>
+            <li class="quote"><span><%= quotes[i].name %></span> goes, "<span><%= quotes[i].quote %></span>"</li><%} %>
+        </ul>
+        <div class="cf">
+            <div class="left">
+                <h2>Add an Animal!</h2>
+                <form action="/quotes" method="post">
+                    <input name="name" placeholder="name" type="text"> <input name="quote" placeholder="sound" type="text"> 
+                    <button type="submit" class="btn" id="create">Create</button>
+                </form>
+                <button class="btn" id="update">Update the fox</button> <button class="btn" id="delete">Delete the fox</button> 
+            </div>
+
+            <iframe src="https://open.spotify.com/embed/track/5HOpkTTVcmZHnthgyxrIL8" width="300" height="100" frameborder="0" allowtransparency="true" class="right" style="padding: 40px 0 0;"></iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

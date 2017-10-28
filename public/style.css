@@ -1,0 +1,54 @@
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    font-family: Arial;
+    background: #dbc1c7;
+    padding: 20px 20px 80px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+.left {
+    float: left;
+    width: 500px;
+}
+.right {
+    float: right;
+}
+#update.btn {
+    background: yellow;
+    color: #000;
+}
+#delete {
+    background: red;
+}
+#create {
+    background: green;
+    
+}
+.btn {
+    cursor: pointer;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+input {
+    padding: 4px 2px;
+}
