@@ -25,7 +25,7 @@ update.addEventListener('click', function () {
   })
   setTimeout(function(){
    window.location.reload(1);
-}, 200);
+}, 1000);
 })
 
 del.addEventListener('click', function () {
